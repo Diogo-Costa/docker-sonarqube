@@ -1,0 +1,14 @@
+version: '2'
+services:
+  web:
+    container_name: sonarqube-5-5
+    image: diogocosta/sonarqube-5-5
+    ports:
+      - "9000:9000"
+    depends_on:
+      - db
+  db:
+    container_name: mysql-5-7
+    image: diogocosta/mysql-5-7
+    ports:
+      - "3306:3306"
