@@ -18,9 +18,6 @@ RUN echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
 RUN apt-get update && apt-get install oracle-java8-installer -y
 
-# Setup the OpenSSH
-RUN apt-get -y install openssh-server
-
 # Cleaning the trash of the installation
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
