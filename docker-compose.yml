@@ -1,8 +1,8 @@
 version: '2'
 services:
   web:
-    container_name: sonarqube-5-5
-    image: diogocosta/sonarqube-5-5
+    container_name: sonarqube-6-2
+    image: diogocosta/sonarqube-6-2
     ports:
       - "9000:9000"
     depends_on:
